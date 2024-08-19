@@ -1,0 +1,92 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color:#37505C;
+    color: #F2C14E;
+    font-family: 'Finger Paint', cursive;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+
+.playermsg{
+    text-align: center;
+    /* display: none; */
+}
+.restartbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.restart{
+    font-size: 15px;
+    font-weight: bolder;
+    color: #282727;
+    background-color: #F2C14E;
+    padding: 10px;
+    border-radius: 20px;
+    padding-left: 18px;
+    padding-right: 19px;
+    margin: 10px;
+    border-color: #F2C14E;
+    transition: 200ms transform;
+
+
+    &:hover{
+        cursor: pointer;
+        transform: translateY(-2px);
+    }
+
+}
+
+.container{
+   
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-height: 32vw;
+    
+}
+
+.board{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-height: 400px;
+    max-width: 400px;
+   
+}
+   
+
+.boxes{
+    height: 120px;
+    width: 120px;
+    color: #F2C14E;
+    border-right: 2px solid ;
+    border-bottom:2px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 90px;
+
+}
+
+.boxes:nth-child(3n){
+    border-right: none;
+}
+
+.boxes:nth-child(6) ~ .boxes{
+    border-bottom: none;
+}
+
+.winnername{
+    display: none;
+    font-size: 25px;
+}
