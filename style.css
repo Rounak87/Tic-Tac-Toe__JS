@@ -90,3 +90,18 @@ h1{
     display: none;
     font-size: 25px;
 }
+@media (max-width: 400px){ 
+    
+    .boxes{ 
+        height: 100px; 
+        width: 100px; 
+        color: #F2C14E; 
+        border-right: 2px solid ; 
+        border-bottom:2px solid ; 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        font-size: 90px; 
+    } 
+    
+}
